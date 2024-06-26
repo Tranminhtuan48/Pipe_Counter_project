@@ -1,6 +1,5 @@
 import cv2
 import numpy as np
-from google.colab.patches import cv2_imshow
 
 def find_count_circular_contours(image_path, epsilon):
     image = cv2.imread(image_path)
@@ -30,7 +29,7 @@ def find_count_circular_contours(image_path, epsilon):
             circles.append(contour)
             cv2.drawContours(rgb, [contour], -1, (0, 255, 0), 2)
 
-    cv2_imshow(rgb)
+    cv2.imshow(rgb)
     cv2.waitKey(0)
     return len(circles)
 
