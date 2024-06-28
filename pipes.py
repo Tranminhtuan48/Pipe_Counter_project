@@ -42,7 +42,7 @@ st.title("Pipé Counters")
 uploaded_file = st.file_uploader("Choose your image...", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
-    image = np.array(Image.open(uploaded_file).convert('HSV'))
+    image = np.array(Image.open(uploaded_file).convert('RGB'))
     image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
     st.image(image, caption='Uploaded Image.', use_column_width=True)
