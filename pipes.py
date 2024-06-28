@@ -43,7 +43,7 @@ uploaded_file = st.file_uploader("Choose your image...", type=["jpg", "jpeg", "p
 
 if uploaded_file is not None:
     image = np.array(Image.open(uploaded_file).convert('RGB'))
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+    image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
 
     st.image(image, caption='Uploaded Image.', use_column_width=True)
 
