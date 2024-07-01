@@ -3,14 +3,21 @@
 A project to count pipes.
 
 ## Installation
-
+### Create virtual Enviroment
+```bash
+virtualenv venv
+```
+```bash
+source venv/bin/activate
+```
+### Install Lib
 Use [pip](https://pip.pypa.io/en/stable/) to install requirement.txt.
 
 ```bash
 pip install -r requirement.txt
 ```
 
-## Run
+### Run
 
 ```terminal
 streamlit run pipe.py
