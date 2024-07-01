@@ -7,7 +7,7 @@ A project to count pipes.
 Use [pip](https://pip.pypa.io/en/stable/) to install requirement.txt.
 
 ```bash
-pip install requirement.txt
+pip install -r requirement.txt
 ```
 
 ## Run
