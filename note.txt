@@ -1,0 +1,2 @@
+virtual env 
+source pipeCountervenv/bin/activate -> (pipeCounter)
